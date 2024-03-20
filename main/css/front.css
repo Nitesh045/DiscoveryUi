@@ -1,0 +1,525 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 0.25em;
+    
+    
+}
+
+li a{
+    text-decoration: none;
+    color:white;
+}
+li a:hover{
+    color: #fff;
+    border-bottom: 2px solid black;
+}
+
+.main-section {
+    width: 100%;
+}
+
+.headerLeft {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    z-index: 1;
+}
+.headerLeft img{
+    width: 170px;
+}
+
+.headerRight {
+    width: 45%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    z-index: 1;
+    text-align: right;
+}
+
+.headerRight ul {
+
+    list-style: none;
+}
+
+
+/* header end here...................................... */
+.middle-content {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* Ensure content is above the video */
+    text-align: left;
+
+}
+
+.main-section h1 {
+    margin: 0px;
+    font-size: 80px;
+    text-align: left;
+}
+
+.autotext {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* Ensure content is above the video */
+    text-align: center;
+    color: #fff;
+}
+
+.arrowDown {
+    position: absolute;
+    top: 80%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* Ensure content is above the video */
+    text-align: center;
+    color: #fff;
+
+}
+
+
+.middle-contentBold{
+    font-size: 70px;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+.middle-contentNormal{
+    font-size: 70px;
+    font-weight:lighter;
+    margin-top: -40px;
+}
+
+#drowauto {
+    position: absolute;
+    top: -100px;
+    /* Initial position above the container */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    /* Initially hidden */
+    overflow: hidden;
+    animation: arrowAnimation 3s infinite ease-in-out;
+}
+
+
+
+@keyframes arrowAnimation {
+    0% {
+        top: -5%;
+        opacity: 0.1;
+    }
+
+    20% {
+        top: 10%;
+        opacity: 0.5;
+    }
+
+    50% {
+        top: 30%;
+        opacity: 0.8;
+    }
+
+    80% {
+        top: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 60%;
+        opacity: 0;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+.c-hero-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* second page scroll auto part...........here  */
+
+.worldExplore p{
+   font-size: 50px;
+   color: black;
+}
+
+.worldExplore{
+    margin: 10px 80px;
+}
+.worldExplorep2{
+    margin-top: -40px;
+    opacity: 0.7;
+}
+.c-line--1{
+    font-size: 50px;
+
+
+}
+.c-line--2{
+    font-size: 50px;
+    font-weight: lighter;
+}
+.grid-tamplate-1 {
+    width: 40%;
+}
+
+.grid-tamplate-1 img {
+    width: 100%;
+    height: 500px;
+}
+
+.o-cover-1 img {
+    height: 300px;
+    margin-top: 10rem;
+}
+
+.js-smooth-section {
+    padding-top: 30px;
+}
+
+.photos {
+
+    z-index: -1;
+}
+
+.photos img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.c-slide__content {
+    position: relative;
+    top: -30%;
+    color: black;
+    text-align: center;
+}
+
+.c-slide__content h1 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.photos {
+    border: none;
+    width: 400px;
+    height: 400px;
+
+    white-space: nowrap;
+    display: inline-block;
+    animation: scrollAnimation 60s linear infinite
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-900%);
+    }
+}
+
+.img-travell-x-axis {
+    width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    column-gap: 10px;
+}
+
+.galary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* earth part */
+
+
+.arrowLeftRight {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.rightarrow,
+.leftarrow {
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+
+}
+
+.worldExplore,
+.leftarrow,
+.rightarrow {
+    color: black;
+}
+
+.leftarrow-arrow {
+    color: black;
+
+}
+
+.landofdiscovery-content-1{
+    width: 30%;
+    height: 30vh;
+    margin: 30px;
+}
+.c-line{
+    font-size: 50px;
+    color: black;
+}
+.o-txt p{
+    color: black;
+}
+
+.landofdiscovery-content-2 {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.leftsideEarth {
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+}
+
+.leftsideEarth img {
+    width: 1100px;
+
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    left: -50%;
+    top: -12%;
+   
+
+}
+
+.landofdiscovery{
+    height: 100vh;
+    width: 100%;
+}
+.rightsideSlideImage {
+    display: grid !important;
+    grid-template-columns: auto auto;
+    width: 50%;
+    justify-content: flex-start;
+
+}
+
+
+.rightsideContentImage {
+    background-color: black;
+    position: absolute;
+    width: 25%;
+    height: 90vh;
+    
+}
+
+.rightsideSlideImagediv {
+    width: 100%;
+    position: absolute !important;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+   height: 90vh;
+    z-index: -1
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+
+.imageStuff {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.icons-stuff span {
+    margin: 10px;
+
+}
+
+.fa-solid,
+.fa-regular {
+    font-size: 20px;
+}
+
+
+
+
+.expLifeWell{
+    margin-top: 200px;
+    height: 100vh;
+
+}
+.expLifeWell-content {
+    width: 100%;
+}
+
+.expLifeWell-content-1 {
+    width: 33%;
+
+}
+.expLifeWell-content-1:hover .p-arrow-right{
+    cursor: pointer;
+    left: 80%;
+    
+}
+
+
+/* ecx life wellenss */
+.expLifeWell-content-1 img {
+    width: 421px;
+    height: 100vh;
+}
+
+.expLifeWell-content-1-inner{
+    position: relative;
+    top: -50%;
+    left: 5%;
+    text-align: center;
+    
+}
+.expLifeWell-content-1 p{
+    position: absolute;
+    left: 40%;
+    text-align: center;
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    border: #fff 1px solid;
+    border-radius: 50%;
+     /* Smooth transition */
+    
+}
+.p-arrow-right{
+    margin: auto;
+     /* Smooth transition */
+     
+     position: absolute;
+    top: 40%;
+    left: 10%; /* Initial position off-screen to the left */
+    transition: left 0.3s ease;
+     /* Initial position off-screen to the left */
+    
+}
+
+
+
+.footerUpper {
+    display: flex;
+    justify-content: space-between;
+   
+    width: 100%;
+}
+
+.footerLeft {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerRight {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.footerLower {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+.lowerLeft {
+    width: 30%;
+    text-align: center;
+}
+.footerLeft img{
+    width: 40px;
+    height: 30px;
+    filter: grayscale(100%);
+  
+    /* Apply sepia filter */
+    filter: invert(100%);
+}
+
+.lowerRight {
+    width: 45%;
+    display: flex;
+    justify-content: right;
+
+}
